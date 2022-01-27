@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.MainPage">
+
+    <Grid BackgroundColor="#24252a">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="350"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Margin="20" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand">
+            <Label Text="" FontSize="Large" HorizontalOptions="EndAndExpand" TextColor="#147d93" x:Name="currentNumber"></Label>
+            <Label Text="0" Margin="0,50,0,0" HorizontalOptions="EndAndExpand" TextColor="White" FontSize="48" x:Name="txtExpression"></Label>
+        </Grid>
+        <Grid Grid.Row="1" Margin="0,-100,0,0">
+            <StackLayout Orientation="Vertical" Margin="20">
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
+                    <Button Style="{StaticResource operatorButton}" Text="√" x:Name="btnSqrt" Clicked="selectOperator"></Button>
+                    <Button Style="{StaticResource operatorButton}" Text="^" x:Name="btnPow" Clicked="selectOperator"></Button>
+                    <Button Style="{StaticResource operatorButton}" Text="%" x:Name="btnMod" Clicked="selectOperator"></Button>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
+                    <Button Style="{StaticResource operatorButton}" Text="AC" x:Name="btnAllClear" Clicked="btnAllClear_Clicked"></Button>
+                    <Button Style="{StaticResource operatorButton}" Text="C" x:Name="btnClear" Clicked="btnClear_Clicked"></Button>
+                    <Button Style="{StaticResource operatorButton}" Text="(" x:Name="btnLeftBracket" Clicked="selectOperator"></Button>
+                    <Button Style="{StaticResource operatorButton}" Text=")" x:Name="btnRightBracket" Clicked="selectOperator"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
+                    <Button Style="{StaticResource numberButton}" Text="7" x:Name="btn7" Clicked="selectNumber"></Button>
+                    <Button Style="{StaticResource numberButton}" Text="8" x:Name="btn8" Clicked="selectNumber"></Button>
+                    <Button Style="{StaticResource numberButton}" Text="9" x:Name="btn9" Clicked="selectNumber"></Button>
+                    <Button Style="{StaticResource operatorButton}" Text="÷" x:Name="btnDivide" Clicked="selectOperator"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand">
+                    <Button Style="{StaticResource numberButton}" Text="4" x:Name="btn4" Clicked="selectNumber"></Button>
+                    <Button Style="{StaticResource numberButton}" Text="5" x:Name="btn5" Clicked="selectNumber"></Button>
+                    <Button Style="{StaticResource numberButton}" Text="6" x:Name="btn6" Clicked="selectNumber"></Button>
+                    <Button Style="{StaticResource operatorButton}" Text="×" x:Name="btnMultiply" Clicked="selectOperator"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
+                    <Button Style="{StaticResource numberButton}" Text="1" x:Name="btn1" Clicked="selectNumber"></Button>
+                    <Button Style="{StaticResource numberButton}" Text="2" x:Name="btn2" Clicked="selectNumber"></Button>
+                    <Button Style="{StaticResource numberButton}" Text="3" x:Name="btn3" Clicked="selectNumber"></Button>
+                    <Button Style="{StaticResource operatorButton}" Text="-" x:Name="btnMinus" Clicked="selectOperator"></Button>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
+                    <Button Style="{StaticResource numberButton}" Text="." x:Name="btnDot" Clicked="selectOperator"></Button>
+                    <Button Style="{StaticResource numberButton}" Text="0" x:Name="btn0" Clicked="selectNumber"></Button>
+                    <Button Style="{StaticResource operatorButton}" Text="+" x:Name="btnPlus" Clicked="selectOperator"></Button>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand" >
+                    <Button Style="{StaticResource operatorButton}" Text="=" x:Name="btnCalculate" Clicked="btnCalculate_Clicked"></Button>
+                </StackLayout>
+            </StackLayout>
+
+        </Grid>
+
+    </Grid>
+
+</ContentPage>

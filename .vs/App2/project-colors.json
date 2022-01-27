@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7c0bc041-7b3f-4b4f-9290-35bd0e1be2ee": {
+      "ProjectGuid": "7c0bc041-7b3f-4b4f-9290-35bd0e1be2ee",
+      "DisplayName": "App2",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "4be81e37-9a60-451a-a336-a7699838a79b": {
+      "ProjectGuid": "4be81e37-9a60-451a-a336-a7699838a79b",
+      "DisplayName": "App2.Android",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

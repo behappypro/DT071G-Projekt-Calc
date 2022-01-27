@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.App">
+    <Application.Resources>
+       
+        <Style x:Key="numberButton" TargetType="Button">
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="BackgroundColor" Value="#49555b"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+            <Setter Property="FontSize" Value="Title"></Setter>
+            <Setter Property="WidthRequest" Value="50"></Setter>
+            <Setter Property="HeightRequest" Value="50"></Setter>
+        </Style>
+
+        <Style x:Key="operatorButton" TargetType="Button">
+            <Setter Property="TextColor" Value="White"></Setter>
+            <Setter Property="BackgroundColor" Value="#196373"></Setter>
+            <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
+            <Setter Property="FontSize" Value="Title"></Setter>
+            <Setter Property="WidthRequest" Value="50"></Setter>
+            <Setter Property="HeightRequest" Value="50"></Setter>
+            <Setter Property="FontSize" Value="29"></Setter>
+        </Style>
+
+
+    </Application.Resources>
+</Application>
