@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -32,22 +33,35 @@ namespace App2
                 }
                 else if ((c == '×' || c == '÷') && i != 0 && bracketCounter == 0 && operatorIndex < 0)//× och ÷ operatörer är andra i prioritet på uttrycket
                 {
-                    
                     operatorIndex = i;
+                    
+                    
                 }
                 else if ((c == '^' || c=='√') && bracketCounter == 0 && operatorIndex < 0)//^ och √ operatörer har sista prioritet på uttrycket
                 {
                     operatorIndex = i;
+
                 }
+
             }
             if (operatorIndex < 0)// Kollar om det inte finns någon operatör i uttrycket
             {
                 expression = expression.Trim();
-                if (expression.ElementAt(0) == '(' && expression.ElementAt(expression.Length - 1) == ')')
-                    return Calculate(expression.Substring(1, expression.Length - 2));//Rekursivt anrop för funktionen calculate om uttrycket har parantes. Exempelvis (2+2)*(3+3)
-                else
+                if (expression.Length == 0 || expression == "")
+                {
+                    return double.NaN;
+                }
+                if (expression.ElementAt(0) == '(' && expression.ElementAt(expression.Length - 1) == ')') {
+                return Calculate(expression.Substring(1, expression.Length - 2)); }//Rekursivt anrop för funktionen calculate om uttrycket har parentes. Exempelvis (2+2)x(3+3)
+            else if (bracketCounter != 0)
+            {
+                    return double.NaN;
+            }
+            else
+            {
                     return Convert.ToDouble(expression);//Returnera resultatet av uttrycket eller deluttrycket 
             }
+                }
             else
             {
                 //Switch för de olika matematiska funktionerna utifrån operatör

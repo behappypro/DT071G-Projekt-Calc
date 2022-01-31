@@ -9,8 +9,8 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Margin="20" HorizontalOptions="EndAndExpand" VerticalOptions="StartAndExpand">
-            <Label Text="" FontSize="Large" HorizontalOptions="EndAndExpand" TextColor="#147d93" x:Name="currentNumber"></Label>
-            <Label Text="0" Margin="0,50,0,0" HorizontalOptions="EndAndExpand" TextColor="White" FontSize="48" x:Name="txtExpression"></Label>
+            <Label Text="" Margin="0,30,0,0"  FontSize="Large" HorizontalOptions="EndAndExpand" TextColor="#147d93" x:Name="currentNumber"></Label>
+            <Label Text="0" Margin="0,100,0,0" HorizontalOptions="EndAndExpand" TextColor="White" FontSize="48" x:Name="txtExpression"></Label>
         </Grid>
         <Grid Grid.Row="1" Margin="0,-100,0,0">
             <StackLayout Orientation="Vertical" Margin="20">

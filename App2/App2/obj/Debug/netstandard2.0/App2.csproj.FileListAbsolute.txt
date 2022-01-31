@@ -2,6 +2,7 @@ C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\bin\Debug\netstandard2.0\App2.dep
 C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\bin\Debug\netstandard2.0\App2.dll
 C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\bin\Debug\netstandard2.0\ref\App2.dll
 C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\bin\Debug\netstandard2.0\App2.pdb
+C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\obj\Debug\netstandard2.0\App2.csproj.AssemblyReference.cache
 C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\obj\Debug\netstandard2.0\App2.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
@@ -12,4 +13,3 @@ C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\obj\Debug\netstandard2.0\XamlC.st
 C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\obj\Debug\netstandard2.0\App2.dll
 C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\obj\Debug\netstandard2.0\ref\App2.dll
 C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\obj\Debug\netstandard2.0\App2.pdb
-C:\Users\Ashraf\Desktop\Ny mapp (10)\App2\App2\obj\Debug\netstandard2.0\App2.csproj.AssemblyReference.cache
